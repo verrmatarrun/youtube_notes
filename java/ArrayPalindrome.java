@@ -24,7 +24,6 @@ class ArrayPalindrome
 				break;
 			}
 		}
-
 		if(i>j)
 			System.out.println("Array is palindrome");
 
