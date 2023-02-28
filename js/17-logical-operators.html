@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Logical Operators</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Logical operators
+		//Used to make logic
+		//Used between boolean operands
+		//Logical AND &&
+		//Logical OR ||
+		//Logical Not !
+
+		let a=10,b=5;
+		console.log(a<b&&a>5);//false
+		console.log(a>b&&a>5);//true
+		console.log(a>b&&a>15);//false
+
+		console.log(a&&b);//5
+		console.log(0&&b);//0
+
+		console.log(null&&b);//null
+		console.log(undefined&&b);//undefined
+
+		console.log(a>b||a>100);//true
+		console.log(a>100||a>1);//true
+		console.log(a>100||b<1);//false
+		console.log(a||b);
+		console.log(a-10||b);
+
+		console.log(!(a<b));
+		console.log(!(a-10));
+
+	</script>
+</body>
+</html>
