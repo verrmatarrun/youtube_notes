@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slice examples</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const colors=['red','green','blue','pink','purple']
+		const slicedColors=colors.slice(1,4)
+		console.log(colors)
+		console.log(slicedColors)
+		const lastTwoColor=colors.slice(-2)
+		console.log(lastTwoColor)
+		const copiedArray=colors.slice()
+		console.log(copiedArray)
+		console.log(colors===copiedArray)		
+		console.log(colors==copiedArray)
+		const someElements=colors.slice(-4,-2)
+		console.log(someElements)
+	</script>
+</body>
+</html>

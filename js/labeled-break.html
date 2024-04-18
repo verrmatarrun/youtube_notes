@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>labeled break</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		outerloop:
+		for(let i=1;i<=5;i++)
+		{
+			for(let j=1;j<=5;j++)
+			{
+				if(i==3)
+				{
+					continue
+				}
+				document.write(j+"&nbsp;")
+			}
+			document.write("<br>")
+		}
+
+	</script>
+</body>
+</html>

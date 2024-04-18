@@ -3,12 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BigInt example</title>
+	<title>continue in for loop</title>
 </head>
 <body>
 	<script type="text/javascript">
-		let x=BigInt(12.5);
-		console.log(x,typeof(x));
+		for(let i=1;i<=5;i++)
+		{
+			if(i==3)
+			{
+				continue
+			}
+			console.log(i)
+		}
 	</script>
 </body>
 </html>

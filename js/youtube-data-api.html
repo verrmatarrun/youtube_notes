@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="video-container"></div>
+	<script type="text/javascript">
+		// Replace 'YOUR_API_KEY' with your actual API key.
+const apiKey = 'AIzaSyBQsPjeBl3yMV6bp6Ec8u8Bzd6dbygQKOE';
+const channelId = 'UCemwb3X9ig41krrtYYfjafg'; // You can find your channel ID in your YouTube account settings.
+
+const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&order=date&part=snippet&type=video`;
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const latestVideoId = data.items[0].id.videoId;
+    const videoTitle = data.items[0].snippet.title;
+
+    // Embed the video on your website.
+    const embedCode = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${latestVideoId}" frameborder="0" allowfullscreen></iframe>`;
+
+    // Insert the embed code wherever you want to display the latest video on your website.
+    document.getElementById('video-container').innerHTML = embedCode;
+  })
+  .catch(error => console.error(error));
+
+	</script>
+</body>
+</html>

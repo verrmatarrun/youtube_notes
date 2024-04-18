@@ -3,12 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BigInt example</title>
+	<title>continue in while loop</title>
 </head>
 <body>
 	<script type="text/javascript">
-		let x=BigInt(12.5);
-		console.log(x,typeof(x));
+		let i=0
+		while(i<5)
+		{
+			i++
+			if(i==2||i==4)
+			{
+				continue
+			}
+			console.log(i)
+			
+		}
+
 	</script>
 </body>
 </html>

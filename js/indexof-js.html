@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>index of</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let fruits=['kiwi','apple','mango','cherry','banana','cherry','papaya']
+		const firstIndex=fruits.indexOf('cherry')
+		console.log(firstIndex)
+		let searchTerm="guava"
+		if(fruits.indexOf(searchTerm)!=-1)
+		{	console.log(`${searchTerm} found in the array`)
+		}
+		else
+		{	console.log(`${searchTerm} not found in the array`)
+		}
+
+		console.log(fruits.indexOf('cherry',-3))
+	</script>
+</body>
+</html>

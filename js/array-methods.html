@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array methods</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let friends=["tarun","ajay"]
+		document.write(friends+"<br>")
+		document.write(friends.push("nirmal","hari")+"<br>")
+		document.write(friends+"<br>")
+		document.write(friends.pop()+"<br>")//hari
+		document.write(friends+"<br>")
+		document.write(friends.unshift("nitin","manish","pankaj")+"<br>")//6
+		document.write(friends+"<br>")
+		document.write(friends.shift()+"<br>")//nitin
+		document.write(friends+"<br>")
+
+		let friends1=["nirmal","hari","tarun"]
+		let friends2=["ajay","anjani","arpit"]
+		let allFriends=friends1.concat(friends2)
+		document.write(allFriends+"<br>")
+
+		let friendString=friends1.join(" ***** ")
+		document.write(friendString)
+
+	</script>
+</body>
+</html>

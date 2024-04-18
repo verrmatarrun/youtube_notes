@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multidimensional array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a=[11,22,45,67,8]
+		let b=[44,54,66,-1,89]
+		let c=[17,81,99,500,600]
+		let d=[171,281,199,2,1]
+		
+		let matrix=[a,b,c,d]
+		// matrix[0][1]=20
+		// document.write(matrix)
+		for(let j of matrix)
+		{
+			for(let k of j)
+			{
+				document.write(k+" ")
+			}
+			document.write("<br>")
+		}
+
+
+	</script>
+</body>
+</html>
