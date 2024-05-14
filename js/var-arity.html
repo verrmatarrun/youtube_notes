@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variable arity</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function print(...param)
+		{
+			var len=param.length
+			document.write(`<br>Argument recieved ${len}`)
+
+			document.write(`<br>Arguments are <br>`)
+			for(var x of param)
+				document.write(`${x} `)
+		}
+
+		document.write(print.length)
+
+	</script>
+</body>
+</html>
